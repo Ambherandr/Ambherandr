@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="src/style.css" rel="stylesheet" type="text/css" />
+    <link href="src/wk2hstyle.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/0d46a28dbb.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="container">
+    <div class="container" style="width:100%">
       <div class="row">
         <div class="col">
           <form>
@@ -21,12 +21,13 @@
       </div>
       <div class="row">
         <div class="col">
-          <h1 class="city" style="float:right; padding-right:2px;">
+          <h1 class="city" style="text-align: center;">
             Dallas
           </h1>
         </div>
-        <div class="col">
-          <h1>
+        <div class="row">
+        <div class="col" style="text-align: right;">
+          <h1 class="prcwind">
             Precipitation: 24%
           </br>
           Wind: 12mph NW
@@ -34,70 +35,120 @@
         </div>
       </div>
     <div class="row">
-        <div class="col">
+        <div class="col" style="text-align: center;">
             <i class='fas fa-cloud-sun mainweath'></i>
         </div>
     </div>
-        
       <div class="row">
         <div class="col">
+          <h1 class="degree" style="text-align: left;">79°F</h1>
+        </div>
+        <div class="col">
+          <h1 class="degree" style="text-align: center;">88°F</h1>
+        </div>
+        <div class="col">
+          <h1 class="degree" style="text-align: right;">97°F</h1>
+        </div>
+      </div>  
+      <div class="row">
+        <div class="col temp" style="text-align: left;">
           <h1>Low Temp</h1>
         </div>
-        <div class="col">
+        <div class="col temp" style="text-align: center;">
           <h1>Current Temp</h1>
         </div>
-        <div class="col">
+        <div class="col temp" style="text-align: right;">
           <h1>High Temp</h1>
         </div>
       </div>
-      <div class="row">
-        <div class="col">
-          <div class="card" style="width: 13rem;">
-            <h1>Tuesday</h1>
-            <h2>July 19</h2>
-            <i class='fa-solid fa-cloud-sun' style='font-size:48px'></i>
+      <div class="row cardcast">
+        <div class="col fiveforecast">
+          <div class="card">
+            <h1 class="day">Tuesday</h1>
+            <h2 class="date">July 19</h2>
+            <i class='fa-solid fa-cloud-sun'></i>
             <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h1 class="ltemp">82°</h1>
+                </div>
+                <div class="col">
+                  <h1 class="htemp">101°</h1>
+                </div>
+              </div>
               <p class="card-text">Low Temp High Temp</p>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card" style="width: 13rem;">
-            <h1>Wednesday</h1>
-            <h2>July 20</h2>
-            <i class='fas fa-cloud-rain' style='font-size:48px'></i>
+        <div class="col fiveforecast">
+          <div class="card">
+            <h1 class="day">Wednesday</h1>
+            <h2 class="date">July 20</h2>
+            <i class='fas fa-cloud-rain'></i>
             <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h1 class="ltemp">74°</h1>
+                </div>
+                <div class="col">
+                  <h1 class="htemp">86°</h1>
+                </div>
+              </div>
+              <p class="card-text">Low Temp     High Temp</p>
+            </div>
+          </div>
+        </div>
+        <div class="col fiveforecast">
+          <div class="card">
+            <h1 class="day">Thursday</h1>
+            <h2 class="date">July 21</h2>
+            <i class='fas fa-poo-storm'></i>
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h1 class="ltemp">76°</h1>
+                </div>
+                <div class="col">
+                  <h1 class="htemp">83°</h1>
+                </div>
+              </div>
               <p class="card-text">Low Temp High Temp</p>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card" style="width: 13rem;">
-            <h1>Thursday</h1>
-            <h2>July 21</h2>
-            <i class='fas fa-poo-storm' style='font-size: 48px'></i>
-            <div class="card-body">
-              <p class="card-text">Low Temp High Temp</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-            <div class="card" style="width: 13rem;">
-                <h1>Friday</h1>
-                <h2>July 22</h2>
-                <i class='far fa-sun' style='font-size:48px'></i>
+        <div class="col fiveforecast">
+            <div class="card">
+                <h1 class="day">Friday</h1>
+                <h2 class="date">July 22</h2>
+                <i class='far fa-sun'></i>
                 <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h1 class="ltemp">83°</h1>
+                    </div>
+                    <div class="col">
+                      <h1 class="htemp">99°</h1>
+                    </div>
+                  </div>
                     <p class="card-text">Low Temp High Temp</p>
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="card" style="width: 13rem;">
-                <h1>Saturday</h1>
-                <h2>July 23</h2>
-                <i class='fas fa-cloud-sun' style='font-size:48px'></i>
+        <div class="col fiveforecast">
+            <div class="card">
+                <h1 class="day">Saturday</h1>
+                <h2 class="date">July 23</h2>
+                <i class='fas fa-cloud-sun'></i>
                 <div class="card-body">
-                    <p class="card-text">Low Temp High Temp</p>
+                  <div class="row">
+                    <div class="col">
+                      <h1 class="ltemp">80°</h1>
+                    </div>
+                    <div class="col">
+                      <h1 class="htemp">91°</h1>
+                    </div>
+                  </div>
+                <p class="card-text">Low Temp High Temp</p>
                 </div>
             </div>
         </div>
